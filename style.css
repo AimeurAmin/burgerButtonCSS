@@ -1,0 +1,46 @@
+.menuButton{
+    margin: 0;
+    padding: 0;
+    border: none;
+    width: 0vmin;
+    overflow: hidden;
+    background-color: transparent;
+    animation: buttonAnim 0.75s  forwards;
+    animation-delay: 0.5s;
+    float: right;
+    
+}
+
+@keyframes buttonAnim {
+    100%{
+        width:3vmin;
+        right: 0;
+    }
+}
+
+.menuButton span{
+    width: 3vmin;
+    height: 0.2vmin;
+    margin-bottom: 0.5vmin;
+    margin-top: 0.5vmin;
+    display: block;
+    background-color: coral;
+    
+}
+
+.buttonContainer{
+    width: 3vmin;
+}
+
+#midspan {
+    transform: translate(1vmin, 0);
+    transition: transform 0.3s ease;
+}
+
+.menuButton:hover {
+    cursor: pointer;
+}
+
+.menuButton:hover #midspan{
+    transform: translate(0);
+}
